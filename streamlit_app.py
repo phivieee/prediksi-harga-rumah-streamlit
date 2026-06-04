@@ -216,6 +216,26 @@ div[data-testid="stAlert"] div {{
 div[data-testid="stAlert"] svg {{
     display: none !important;
 }}
+
+/* Paksa tulisan pada dropdown Kota agar tetap hitam saat deploy */
+div[data-testid="stSelectbox"] [data-baseweb="select"] *,
+div[data-testid="stSelectbox"] [data-baseweb="select"] div,
+div[data-testid="stSelectbox"] [data-baseweb="select"] input {{
+    color: #253228 !important;
+    -webkit-text-fill-color: #253228 !important;
+    font-weight: 600 !important;
+}}
+
+div[data-testid="stSelectbox"] [data-baseweb="select"] input::placeholder {{
+    color: #253228 !important;
+    -webkit-text-fill-color: #253228 !important;
+    opacity: 1 !important;
+}}
+
+div[data-testid="stSelectbox"] label {{
+    color: #000000 !important;
+}}
+
 </style>
 """, unsafe_allow_html=True)
 
